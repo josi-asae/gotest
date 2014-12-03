@@ -1,0 +1,24 @@
+{
+  "name": "noflo-example",
+  "version": "1.0.0",
+  "description": "thingy",
+  "main": "index.js",
+  "scripts": {
+    "test": "do it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "thingy2"
+  },
+  "keywords": [
+    "superduper"
+  ],
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "noflo": "^0.5.11",
+    "noflo-core": "^0.1.11",
+    "noflo-filesystem": "^1.0.6",
+    "noflo-nodejs": "0.0.6"
+  }
+}
