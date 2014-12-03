@@ -1,0 +1,54 @@
+{
+    "properties": {
+        "name": "ShowContents",
+        "sha": "a24c6d086c9c79a9e8647df5cbd0386d3d2e2e72",
+        "changed": true,
+        "project": "tester",
+        "id": "tester_graphs_ShowContents",
+        "environment": {}
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "Read": {
+            "component": "filesystem/ReadFile",
+            "metadata": {
+                "x": 36,
+                "y": 36,
+                "width": 72,
+                "height": 72,
+                "label": "Read"
+            }
+        },
+        "Display": {
+            "component": "core/Output",
+            "metadata": {
+                "x": 144,
+                "y": 36,
+                "width": 72,
+                "height": 72,
+                "label": "Display"
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "Read",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "Display",
+                "port": "in"
+            }
+        },
+        {
+            "data": "package.json",
+            "tgt": {
+                "process": "Read",
+                "port": "in"
+            }
+        }
+    ]
+}
